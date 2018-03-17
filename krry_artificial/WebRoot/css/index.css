@@ -1,0 +1,69 @@
+	*{margin:0;padding:0;}
+	html,body{height:100%;width:100%;}
+	ul li{list-style:none;}
+	body{background:url("../images/back.jpg");background-size:cover;font-size:12px;font-family:"微软雅黑";color:#666;}
+	img{vertical-align:middle;}
+	a{text-decoration:none;}
+	.clear{clear:both;}
+	/*phone start*/
+	.phone{width:100%;height:100%;position:relative;}
+	.phone .p_top{height:40px;background:url("../images/phone_top.png");}
+	.phone .p_title{height:40px;background:#000;border-left:1px solid #FFF;border-right:1px solid #fff;text-align:center;line-height:40px;font-size:16px;}
+	.phone .p_con{height:480px;border-left:1px solid #FFF;border-right:1px solid #FFF;position:relative;overflow:hidden;}
+	.phone .p_con .p_box{height:440px;color:#fff;overflow:auto;position:relative;}
+	.phone .p_con .p_box span{word-wrap:break-word;word-break:break-all;}
+	.phone .p_con .p_box  a{display:block;margin-top:1px;}
+	
+	/*信息推文*/
+	.phone .p_con .p_box .n_big{background:#fff;margin:10px auto;margin-bottom:0;padding-top:7px;background-repeat:no-repeat;background-size:100% 100%;width:82%;height:133px;position:relative;padding:0px 12px;padding-bottom:7px;}
+	.phone .p_con .p_box .n_big .b_imgbig{position:absolute;left:7px;margin-top:7px;}
+	.phone .p_con .p_box .n_big .g_span{left:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;width:100%;height:35px;background:rgba(0, 0, 0, 0.5);color:#fff;position:absolute;bottom:0;line-height:35px;font-size:16px;text-indent:5px;}
+	.phone .p_con .p_box .n_small{background:#fff;line-height:60px;font-size:16px;width:82%;height:56px;margin:0px auto;padding:7px 8px 7px 16px;color:#000;}
+	.phone .p_con .p_box .n_small span{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;width:75%;float:left;}
+	.phone .p_con .p_box .n_small img{float:right;}
+	.phone .p_con .p_box .n_small.lastchild{margin-bottom:10px;}
+	
+	/*发送信息*/
+	.phone .p_con .p_box .p_left{position:relative;padding:10px 50px 10px 10px;color:#000;font-size:16px;font-family:"微软雅黑";min-height:35px;}
+	.phone .p_con .p_box .p_left .jiaoleft{position:absolute;left:48px;top:25px;}
+	.phone .p_con .p_box .p_left .imag{border-radius:50%;position:absolute;left:9px;}
+	.phone .p_con .p_box .p_left span{background:#fff;line-height:24px;border-radius:5px;padding:6px 10px;display:block;float:left;margin-left:43px;}
+	.phone .p_con .p_box .p_left .urlaa{color:red;font-weight:bold;}
+	.phone .p_con .p_box .p_right{color:#fff;position:relative;min-height:35px;padding:10px 10px 10px 50px;font-size:16px;font-family:"微软雅黑";}
+	.phone .p_con .p_box .p_right .jiaoright{transform: rotate(180deg);position:absolute;right:48px;top:25px;}
+	.phone .p_con .p_box .p_right .imag{position:absolute;right:9px;border-radius:50%;}
+	.phone .p_con .p_box .p_right span{float:right;background:#FF5722;line-height:24px;border-radius:5px;padding:6px 10px;display:block;margin-right:43px;}
+	
+	/*按钮和输入框*/
+	.phone .p_con .p_msg{z-index:1;background:#E6E4E4;position:absolute;bottom:0;width:100%;height:40px;}
+	.phone .p_con .p_msg .p_text{border-radius:5px;margin-top:5px;width:70%;margin-left:2%;height:30px;border:none;background:#fff;line-height:32px;outline:none;text-indent:10px;}
+	.phone .p_con .p_msg .p_btn{margin-top:5px;width:14%;height:30px;float:right;margin-right:2%;background:#4CAF50;border:none;cursor:pointer;color:#FFF;font-size:14px;font-weight:bold;font-family:"微软雅黑";border-radius:5px;outline:none;transition:.6s}
+	
+	/*更多*/
+	.phone .p_con .p_msg .p_more{width:30px;height:30px;background:url("../images/more.png");float:left;background-size:cover;margin-top:5px;margin-left:2%;color:#676767;cursor:pointer;}
+	.phone .p_con .p_msg .p_more span{font-size:32px;line-height:22px;margin-left:-2px;}
+	.phone .p_con .p_moremsg{bottom:-125px;position:absolute;width:100%;height:163px;background:#fff;}
+	.phone .p_con .p_moremsg .g_container{overflow:auto;height:163px;}
+	.phone .p_con .p_moremsg ul{margin-bottom:20px;}
+	.phone .p_con .p_moremsg ul li{text-align:center;font-size:12px;width:80px;margin:0 auto;cursor:pointer;}
+	.phone .p_con .p_moremsg ul li span{line-height:32px;}
+	
+	/*底部*/
+	.phone .p_bottom{height:45px;background:url("../images/phone_bottom.png");}
+	.chat{width:300px;height:100px;background:#66CCFF;}
+	/*end phone*/
+ 
+	@media screen and (max-width:580px){
+	   .phone{width:100%;margin:0;}
+	   .phone .p_top,.phone .p_info,.phone .p_bottom{display:none;}
+	   .phone .p_title,.phone .p_con{border:none;}
+	}
+	::-webkit-scroLLbar{width:3px;height:6px;background: rgba(255, 255, 255, 0);}
+	::-webkit-scroLLbar-track{background: rgba(255, 255, 255, 0);}
+	::-webkit-scroLLbar-track-piece{background:rgba(255, 255, 255, 0);}
+	::-webkit-scroLLbar-thumb{border-radius: 6px;background: #666;}
+	::-webkit-scroLLbar-corner{background: #82AFFF;}
+	::-webkit-scroLLbar-resizer{background: #FF0BEE;}
+	scrollbar{-moz-appearance:none !important;background: rgb(0,255,0) !important;}
+	scrollbarbutton{-moz-appearance:none !important;background-color:rgb(0,0,255) !important;}
+	scrollbarbutton:hover{-moz-appearance:none !important;background-color:rgb(255,0,0) !important;}
