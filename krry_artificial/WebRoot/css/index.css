@@ -12,16 +12,19 @@
 	.phone .p_con{height:480px;border-left:1px solid #FFF;border-right:1px solid #FFF;position:relative;overflow:hidden;}
 	.phone .p_con .p_box{height:440px;color:#fff;overflow:auto;position:relative;}
 	.phone .p_con .p_box span{word-wrap:break-word;word-break:break-all;}
-	.phone .p_con .p_box  a{display:block;margin-top:1px;}
+	.phone .p_con .p_box  a{display:block;}
 	
 	/*信息推文*/
-	.phone .p_con .p_box .n_big{background:#fff;margin:10px auto;margin-bottom:0;padding-top:7px;background-repeat:no-repeat;background-size:100% 100%;width:82%;height:133px;position:relative;padding:0px 12px;padding-bottom:7px;}
-	.phone .p_con .p_box .n_big .b_imgbig{position:absolute;left:7px;margin-top:7px;}
+	.msg_imgs{position: relative;margin: 0 auto;width: 86%;}
+	.phone .p_con .p_box .n_big{background:#fff;margin:10px auto;margin-bottom:0;background-repeat:no-repeat;background-size:100% 100%;height:200px;position:relative;}
+	.b_imgbig .detileimg{width: 100%;height: 100%;border-radius: 4px 4px 0 0;}
+	.phone .p_con .p_box .n_big .b_imgbig{width:100%;height:100%;}
 	.phone .p_con .p_box .n_big .g_span{left:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;width:100%;height:35px;background:rgba(0, 0, 0, 0.5);color:#fff;position:absolute;bottom:0;line-height:35px;font-size:16px;text-indent:5px;}
-	.phone .p_con .p_box .n_small{background:#fff;line-height:60px;font-size:16px;width:82%;height:56px;margin:0px auto;padding:7px 8px 7px 16px;color:#000;}
-	.phone .p_con .p_box .n_small span{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;width:75%;float:left;}
+	.phone .p_con .p_box .n_small{background:#fff;line-height:60px;font-size:16px;height:50px;margin:0px auto;padding:7px 9px 7px 12px;color:#000;}
+	.phone .p_con .p_box .n_small span{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;width:78%;float:left;font-size: 14px;line-height: 50px;border-bottom: 1px solid #e6e6e6;height: 56px;}
 	.phone .p_con .p_box .n_small img{float:right;}
-	.phone .p_con .p_box .n_small.lastchild{margin-bottom:10px;}
+	.phone .p_con .p_box .n_small.lastchild{margin-bottom:10px;border-radius: 0 0 4px 4px;}
+	.phone .p_con .p_box .n_small.lastchild span{border-bottom:none;}
 	
 	/*发送信息*/
 	.phone .p_con .p_box .p_left{position:relative;padding:10px 50px 10px 10px;color:#000;font-size:16px;font-family:"微软雅黑";min-height:35px;}
@@ -45,7 +48,7 @@
 	.phone .p_con .p_moremsg{bottom:-125px;position:absolute;width:100%;height:163px;background:#fff;}
 	.phone .p_con .p_moremsg .g_container{overflow:auto;height:163px;}
 	.phone .p_con .p_moremsg ul{margin-bottom:20px;}
-	.phone .p_con .p_moremsg ul li{text-align:center;font-size:12px;width:80px;margin:0 auto;cursor:pointer;}
+	.phone .p_con .p_moremsg ul li{text-align:center;font-size:12px;width:100px;margin:0 auto;cursor:pointer;}
 	.phone .p_con .p_moremsg ul li span{line-height:32px;}
 	
 	/*底部*/

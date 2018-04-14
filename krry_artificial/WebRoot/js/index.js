@@ -40,7 +40,7 @@
 		var value = $("#message").val();
 		$("#p_btn_button").attr("disabled",true);//马上设置按钮不可用
 		$("#message").val("");
-		$(".p_box").append("<div class='p_right'><img class='imag' src='images/mine.jpg' alt='krry' width='36' height='36' />"+
+		$(".p_box").append("<div class='p_right'><img class='imag' src='images/mine.png' alt='krry' width='36' height='36' />"+
 				"<img class='jiaoright' src='images/sanjiao2.png' width='5'/>"+
 				"<span>"+value+
 	 		    "</span><div class='clear'></div></div>");
@@ -68,7 +68,7 @@
 				if(isEmpty(json.url)){
 					string += "<span>"+json.text+"</span><div class='clear'></div></div>";
 				}else{//如果包含链接
-					string += "<span>"+json.text+"<a class='urlaa' href='"+json.url+"'> 打开页面</a></span><div class='clear'></div></div>";
+					string += "<span>"+json.text+"<a class='urlaa' href='"+json.url+"' target='_blank'> 打开页面</a></span><div class='clear'></div></div>";
 				}
 				
 				$(".p_box").append(string);
@@ -76,23 +76,22 @@
 				//判读是否有list
 				//如果有
 				if(!isEmpty(json.list)){
-					var newstring = "";
+					var newstring = "<div class='msg_imgs'>";
 					var ListArr = json.list;
 					var length = ListArr.length;
-					length = length>4 ? 4 : length;
+					length = length>5 ? 5 : length;
 					
 					var messName = isEmpty(ListArr[0].article) ? ListArr[0].name : ListArr[0].article;
 					//如果没有标题，就按照来源设为标题
 					if(isEmpty(messName)){
 						messName = ListArr[0].source;
 					}
-					var width = $(".p_left").innerWidth()*0.82+10;//获取大的略缩图宽度
 					
 					//设定第一张信息
-					newstring += "<a href='"+ListArr[0].detailurl+"'>"+
+					newstring += "<a href='"+ListArr[0].detailurl+"' target='_blank'>"+
 								 "  <div class='n_big'>"+
 								 "	<div class='b_imgbig'>"+
-								 "		<img class='detileimg' src='"+ListArr[0].icon+"' width='"+width+"' height='126' alt='略缩图'/>"+
+								 "		<img class='detileimg' src='"+ListArr[0].icon+"' alt='略缩图'/>"+
 						   		 "		<span class='g_span'>"+messName+"</span>"+
 						   		 "	</div>"+
 						   		 "	</div>"+
@@ -107,22 +106,22 @@
 							maeeName = List.source;
 						}
 		 				if(i != length-1){
-		 					newstring += "<a href='"+List.detailurl+"'>"+
+		 					newstring += "<a href='"+List.detailurl+"' target='_blank'>"+
 		 					 "	<div class='n_small'>"+
  							 "		<span>"+maeeName+"</span>"+
- 							 "		<img class='detileimg' src='"+List.icon+"' width='56' height='56' alt='略缩图'/>"+
+ 							 "		<img class='detileimg' src='"+List.icon+"' width='50' height='50' alt='略缩图'/>"+
  							 "	</div>"+
- 							 "</a>";
+ 							 "</a><p class='msg_lines'></p>";
 		 				}else{ //如果是最后一条信息，加上增加底部距离的样式
-		 					newstring += "<a href='"+List.detailurl+"'>"+
+		 					newstring += "<a href='"+List.detailurl+"' target='_blank'>"+
 		 					 "	<div class='n_small lastchild'>"+
  							 "		<span>"+maeeName+"</span>"+
- 							 "		<img class='detileimg' src='"+List.icon+"' width='56' height='56' alt='略缩图'/>"+
+ 							 "		<img class='detileimg' src='"+List.icon+"' width='50' height='50' alt='略缩图'/>"+
  							 "	</div>"+
  							 "</a>";
 		 				}
 					}
-		
+					newstring += "</div>";
 					$(".p_box").append(newstring);
 					
 					$(".detileimg").on("error",function(){
@@ -183,7 +182,7 @@
 
 	$(".phone .p_con .p_moremsg ul li span").click(function(){
 		var message = $(this).text();
-		$(".p_box").append("<div class='p_right'><img class='imag' src='images/mine.jpg' alt='krry' width='36' height='36' />"+
+		$(".p_box").append("<div class='p_right'><img class='imag' src='images/mine.png' alt='krry' width='36' height='36' />"+
 				"<img class='jiaoright' src='images/sanjiao2.png' width='5'/>"+
 				"<span>"+message+
 	 		    "</span><div class='clear'></div></div>");

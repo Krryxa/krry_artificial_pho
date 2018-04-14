@@ -5,8 +5,17 @@
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 		<title>智能Mini --Krry</title>
-		<meta name="keywords" content="关键词,关键词">
-		<meta name="description" content="">
+		<meta name="keywords" content="Mini智能回复,智能问答系统,问题查询">
+		<meta name="description" content="智能Mini是一款智能回复系统，可以查快递、天气、航班、菜谱、讲段子、讲笑话等等">
+		<!-- 一些移动设备的全屏 -->
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-touch-fullscreen" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <meta name="full-screen" content="yes">
+	    <meta name="browsermode" content="application">
+	    <meta name="x5-fullscreen" content="true">
+	    <meta name="x5-page-mode" content="app">
+	    
 		<link rel="stylesheet" href="css/index.css" />
    </head>
 
@@ -28,21 +37,20 @@
 				<div class="p_moremsg">
 					<div class="g_container">
 						<ul>
-							<li style="margin-top:10px;"><span>湛江天气</span></li>
-							<li><span>你的爸爸</span></li>
-							<li><span>你的妈妈</span></li>
-							<li><span>星座运势</span></li>
-							<li><span>讲笑话</span></li>
+							<li style="margin-top:10px;"><span>广州天气</span></li>
+							<li><span>今天日期</span></li>
+							<li><span>查快递</span></li>
 							<li><span>菜谱大全</span></li>
-							<li><span>最新电影</span></li>
+							<li><span>风景图片</span></li>
+							<li><span>翻译 我爱你</span></li>
+							<li><span>讲笑话</span></li>
+							<li><span>星座运势</span></li>
 							<li><span>新闻</span></li>
 							<li><span>绕口令</span></li>
 							<li><span>顺口溜</span></li>
 							<li><span>歇后语</span></li>
 							<li><span>脑经急转弯</span></li>
-							<li><span>日期</span></li>
-							<li><span>故事</span></li>
-							<li><span>航班查询</span></li>
+							<li><span>讲个故事</span></li>
 							<div class="clear"></div>
 						</ul>
 					</div>
