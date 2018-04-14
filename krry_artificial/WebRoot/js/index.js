@@ -1,3 +1,4 @@
+	
 	$(window).resize(changewidth);
 	changewidth();
 	//当窗口变化的时候
@@ -17,8 +18,29 @@
 		}
 	});
 	var boxx = document.getElementById("boxx");
-
+	
+	//文本框聚焦的时候,提示框隐藏
 	$("#message").focus(function(){
+		hideMsg();
+	});
+	//文本框失焦 的时候
+	$("#message").blur(function(){
+		setTimeout(function(){
+			$("#message").removeClass("clicked");			
+		},400);
+	});
+	
+	//点击除了某元素之外的触发的事件
+	$(document).bind("click",function(e){
+		var target = $(e.target);
+		//点击className为p_msg和p_moremsg之外的地方触发
+		if(target.closest(".p_msg").length == 0 && target.closest(".p_moremsg").length == 0){
+			hideMsg();
+		}
+	});
+	
+	//提示框隐藏
+	function hideMsg(){
 		$("#message").addClass("clicked");
 		var height = $(window).height() - 40;
 		$(".phone .p_con .p_msg").css("bottom","0");
@@ -28,13 +50,7 @@
 		setTimeout(function(){
 			boxx.scrollTop = boxx.scrollHeight;//使滚动条一直在底部		
 		},200);
-	});
-	
-	$("#message").blur(function(){
-		setTimeout(function(){
-			$("#message").removeClass("clicked");			
-		},400);
-	});
+	}
 	
 	$("#p_btn_button").click(function(){
 		var value = $("#message").val();
@@ -135,15 +151,13 @@
 	   });
   }
   
-  //点击+按钮
+  	//点击+按钮
 	var mote = true;
 	var height = $(window).height() - 40;
 	function moretext(){
 		if(mote){
 			if($("#message").hasClass("clicked")) {
-				setTimeout(function(){
 					toggerdown();
-				},400);
 			}else{
 				toggerdown();
 			}

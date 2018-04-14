@@ -42,13 +42,12 @@
 							<li><span>查快递</span></li>
 							<li><span>菜谱大全</span></li>
 							<li><span>风景图片</span></li>
+							<li><span>新闻</span></li>
 							<li><span>翻译 我爱你</span></li>
 							<li><span>讲笑话</span></li>
 							<li><span>星座运势</span></li>
-							<li><span>新闻</span></li>
 							<li><span>绕口令</span></li>
 							<li><span>顺口溜</span></li>
-							<li><span>歇后语</span></li>
 							<li><span>脑经急转弯</span></li>
 							<li><span>讲个故事</span></li>
 							<div class="clear"></div>
